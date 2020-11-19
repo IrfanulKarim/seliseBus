@@ -1,0 +1,76 @@
+<div class="container"
+  fxLayout="row"
+  fxLayout.sm="column" 
+  fxLayout.xs="column" 
+  fxLayoutAlign.xs="start center"
+  fxLayoutAlign.sm="start center" 
+  fxLayoutAlign.gt-sm="center center" 
+  fxLayoutGap="10px">
+
+
+  <div fxFlex fxFlex.gt-sm="100%" class="form-size">
+    <form action="" [formGroup]="searchbusForm" #sform="ngForm">
+      
+       <table class="form-size">
+        <td>
+          <mat-form-field appearance="fill">
+            <span class="material-icons">
+              location_on
+            </span>
+            <mat-select placeholder="From">
+              <mat-option *ngFor="let dist of district" [value]="dist">
+                {{dist}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </td>
+
+        <td>
+          <mat-form-field appearance="fill">
+            <span class="material-icons">
+              location_on
+            </span>
+            <mat-select placeholder="To">
+              <mat-option *ngFor="let dist of district" [value]="dist">
+                {{dist}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </td>
+
+        <td>
+          <mat-form-field appearance="fill">
+            <mat-label>Journey Date</mat-label>
+            <input matInput [matDatepicker]="picker1">
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+          </mat-form-field>
+          
+        </td>
+        <td>
+          <mat-form-field appearance="fill">
+            <mat-label>Return Date (optional)</mat-label>
+            <input matInput [matDatepicker]="picker2">
+            <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+            <mat-datepicker #picker2 ></mat-datepicker>
+          </mat-form-field>
+          
+        </td>
+        <td>
+          <button type="submit" mat-button class="background-primary text-flora-white">Search Buses</button> 
+        </td>
+        
+
+       </table>
+        
+      
+        
+
+
+     
+        
+    </form>
+  </div>
+
+
+</div>
