@@ -13,9 +13,7 @@
       
 
       <mat-form-field appearance="fill" class="field">
-        <span class="material-icons">
-          location_on
-        </span>
+        <mat-label>FROM</mat-label>
         <mat-select>
           <mat-option *ngFor="let dist of district" [value]="dist">
             {{dist}}
@@ -24,9 +22,7 @@
       </mat-form-field>
 
       <mat-form-field appearance="fill" class="field">
-        <span class="material-icons">
-          location_on
-        </span>
+        <mat-label>TO</mat-label>
         <mat-select>
           <mat-option *ngFor="let dist of district" [value]="dist">
             {{dist}}
