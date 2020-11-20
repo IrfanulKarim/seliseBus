@@ -20,6 +20,7 @@ export class BusService {
   constructor(private http: HttpClient) { }
 
   getBuses(): Observable<Bus[]>{
-    return this.http.get<Bus[]>(baseURL+ 'buses?tripavailability=true').pipe(map(buses=>buses));
+    // return this.http.get<Bus[]>(baseURL+ 'buses?tripavailability=true').pipe(map(buses=>buses));
+    return of(BUSES.filter((buses) => buses.tripavailability));
   }
 }

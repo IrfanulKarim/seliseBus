@@ -11,7 +11,48 @@
   <div fxFlex fxFlex.gt-sm="100%" class="form-size">
     <form [formGroup]="searchbusForm" (ngSubmit)="onSubmit()" #sform="ngForm">
       
-       <table class="form-size">
+
+      <mat-form-field appearance="fill" class="field">
+        <span class="material-icons">
+          location_on
+        </span>
+        <mat-select>
+          <mat-option *ngFor="let dist of district" [value]="dist">
+            {{dist}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="field">
+        <span class="material-icons">
+          location_on
+        </span>
+        <mat-select>
+          <mat-option *ngFor="let dist of district" [value]="dist">
+            {{dist}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+
+      <mat-form-field appearance="fill" class="field">
+        <mat-label>Journey Date</mat-label>
+        <input matInput [matDatepicker]="picker1">
+        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+        <mat-datepicker #picker1></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="field">
+        <mat-label>Return Date(optional)</mat-label>
+        <input matInput [matDatepicker]="picker2">
+        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+        <mat-datepicker #picker2 ></mat-datepicker>
+      </mat-form-field>
+
+      <button type="submit" mat-button routerLink="/availablebus" class="background-primary text-flora-white">Search Buses</button> 
+
+
+       <!-- <table class="form-size">
         <td>
           <mat-form-field appearance="fill" class="align-right"> 
             <span class="material-icons">
@@ -62,7 +103,7 @@
         
 
        </table>
-        
+         -->
       
         
 

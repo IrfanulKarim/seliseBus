@@ -6,7 +6,7 @@ import { AvailablebusComponent } from '../availablebus/availablebus.component';
 
 
 export const routes: Routes = [
-  { path: 'home',  component: SearchbusComponent },
+//   { path: 'home',  component: SearchbusComponent },
   { path: 'availablebus',     component: AvailablebusComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
