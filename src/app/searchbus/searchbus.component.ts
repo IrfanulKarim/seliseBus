@@ -1,8 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { validateBasis } from '@angular/flex-layout';
 import { District } from '../shared/district';
 import { Bus } from '../shared/bus';
+import {  } from '../services/bus.service';
+import { baseURL } from '../shared/baseurl';
 
 
 @Component({
@@ -17,7 +19,8 @@ export class SearchbusComponent implements OnInit {
 
 
 
-  constructor(private fb: FormBuilder) { 
+  constructor(private fb: FormBuilder,
+    @Inject('baseURL') private baseURL) { 
     this.createForm();
   }
 

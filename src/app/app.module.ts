@@ -21,6 +21,7 @@ import { FlexLayoutModule} from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import {HttpModule} from '@angular/http';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
 
@@ -31,6 +32,8 @@ import { SearchbusComponent } from './searchbus/searchbus.component';
 import { AvailablebusComponent } from './availablebus/availablebus.component';
 
 import { BusService } from './services/bus.service';
+
+import { baseURL } from './shared/baseurl';
 
 
 
@@ -63,10 +66,16 @@ import { BusService } from './services/bus.service';
     MatDatepickerModule,
     MatNativeDateModule,
     MatTableModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule
   ],
   providers: [
-    BusService
+    BusService,
+    {provide: 'BaseURL', useValue: baseURL}
+
+  ],
+  entryComponents:[
+    SearchbusComponent
   ],
   bootstrap: [AppComponent]
 })

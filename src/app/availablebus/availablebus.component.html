@@ -1,3 +1,38 @@
-<p>
-  availablebus works!
-</p>
+<div class="container"
+  fxlayout="rows"
+  fxLayout.sm="column"
+  fxLayout.xs="column"
+  fxLayoutGap="10px">
+
+
+  <table mat-table [dataSource]="buses" class="mat-elevation-z8" >
+
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>{{buses.name}}</th>
+      <tr>
+        <td mat-cell *matCellDef="let buses " >
+          <!-- <span class="background_orange circle_orange">{{buses.coachno}}</span>{{item.subtitle}}  -->
+        <tr class="font_orange ">
+          <span>{{buses.coachno}} </span>
+          <!-- <p>{{buses.from}} - {{buses.to}}</p>
+          <p>{{buses.status}}</p> -->
+        </tr>
+        <!-- <tr class="font_orange">
+          {{buses.startingPoint}} 
+        </tr>
+        <tr class="font_orange">
+          {{buses.endpoint}} 
+        </tr> -->
+        </td>
+      </tr>
+    </ng-container>
+
+
+  </table>
+
+
+
+
+
+
+</div>

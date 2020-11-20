@@ -14,7 +14,7 @@ export const BUSES: Bus[] =[
       arrivaltime: '11:35 PM',
       seatsavailable: '36',
       price: '500.00',
-      tripavailability: true;
+      tripavailability: true
       
     },
     {
@@ -30,7 +30,7 @@ export const BUSES: Bus[] =[
         arrivaltime: '12:35 PM',
         seatsavailable: '29',
         price: '500.00',
-        tripavailability: false;
+        tripavailability: false
         
       },
       {
@@ -46,7 +46,7 @@ export const BUSES: Bus[] =[
         arrivaltime: '12:35 PM',
         seatsavailable: '20',
         price: '1000.00',
-        tripavailability: true;
+        tripavailability: true
         
       },
 ];
