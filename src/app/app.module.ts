@@ -14,21 +14,31 @@ import { MatSlideToggle, MatSlideToggleModule } from '@angular/material/slide-to
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSliderModule } from '@angular/material/slider';
+import {MatTableModule} from '@angular/material/table';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material';
 import { FlexLayoutModule} from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+
+import { AppRoutingModule } from './app-routing/app-routing.module';
+
 import 'hammerjs';
 
 import { AppComponent } from './app.component';
 import { SearchbusComponent } from './searchbus/searchbus.component';
+import { AvailablebusComponent } from './availablebus/availablebus.component';
+
+import { BusService } from './services/bus.service';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchbusComponent
+    SearchbusComponent,
+    AvailablebusComponent
   ],
   imports: [
     BrowserModule,
@@ -51,9 +61,13 @@ import { SearchbusComponent } from './searchbus/searchbus.component';
     MatProgressSpinnerModule,
     MatSliderModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatTableModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    BusService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

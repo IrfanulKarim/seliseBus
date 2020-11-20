@@ -9,11 +9,11 @@
 
 
   <div fxFlex fxFlex.gt-sm="100%" class="form-size">
-    <form action="" [formGroup]="searchbusForm" #sform="ngForm">
+    <form action="" [formGroup]="searchbusForm" (ngSubmit)="onSubmit()" #sform="ngForm">
       
        <table class="form-size">
         <td>
-          <mat-form-field appearance="fill">
+          <mat-form-field appearance="fill" class="align-right"> 
             <span class="material-icons">
               location_on
             </span>
@@ -57,7 +57,7 @@
           
         </td>
         <td>
-          <button type="submit" mat-button class="background-primary text-flora-white">Search Buses</button> 
+          <button type="submit" mat-button routerLink="/availablebus" class="background-primary text-flora-white">Search Buses</button> 
         </td>
         
 
