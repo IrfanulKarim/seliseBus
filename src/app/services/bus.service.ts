@@ -20,7 +20,6 @@ export class BusService {
   getBuses(): Observable<Bus[]>{
     return this.http.get<Bus[]>(baseURL+ 'buses');
 
-    // return this.http.get<Dish[]>(baseURL + 'dishes?featured=true').pipe(map(dishes => dishes[0]));
-
+    
   }
 }
