@@ -5,34 +5,60 @@
   fxLayoutGap="10px">
 
 
-  <table mat-table [dataSource]="buses" class="mat-elevation-z8" >
 
-    <ng-container matColumnDef="name">
-      <th mat-header-cell *matHeaderCellDef>{{buses.name}}</th>
+  <table mat-table [dataSource]="buses" class="mat-elevation-z8">
+
+    <ng-container  matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
       <tr>
-        <td mat-cell *matCellDef="let buses " >
-          <!-- <span class="background_orange circle_orange">{{buses.coachno}}</span>{{item.subtitle}}  -->
-        <tr class="font_orange ">
-          <span>{{buses.coachno}} </span>
-          <!-- <p>{{buses.from}} - {{buses.to}}</p>
-          <p>{{buses.status}}</p> -->
-        </tr>
-        <!-- <tr class="font_orange">
-          {{buses.startingPoint}} 
-        </tr>
-        <tr class="font_orange">
-          {{buses.endpoint}} 
-        </tr> -->
-        </td>
+        <td mat-cell *matCellDef="let bus"> {{bus.name}} </td>
       </tr>
     </ng-container>
 
+    <ng-container  matColumnDef="departuretime">
+      <th mat-header-cell *matHeaderCellDef> Departure Time </th>
+      <tr>
+        <td mat-cell *matCellDef="let bus"> {{bus.departuretime}} </td>
+      </tr>
+    </ng-container>
+
+    <ng-container  matColumnDef="arrivaltime">
+      <th mat-header-cell *matHeaderCellDef> arrivaltime </th>
+      <tr>
+        <td mat-cell *matCellDef="let bus"> {{bus.arrivaltime}} </td>
+      </tr>
+    </ng-container>
+
+    <ng-container  matColumnDef="seatsavailable">
+      <th mat-header-cell *matHeaderCellDef> seatsavailable </th>
+      <tr>
+        <td mat-cell *matCellDef="let bus"> {{bus.seatsavailable}} </td>
+      </tr>
+    </ng-container>
+
+    <ng-container  matColumnDef="price">
+      <th mat-header-cell *matHeaderCellDef> price </th>
+      <tr>
+        <td mat-cell *matCellDef="let bus"> {{bus.price}} </td>
+      </tr>
+    </ng-container>
+
+    <ng-container  matColumnDef="viewseats">
+      <th mat-header-cell *matHeaderCellDef> </th>
+      <tr>
+        <td mat-cell *matCellDef="let bus">
+          <button type="submit" mat-button routerLink="" class="background-primary text-flora-white">View Seats</button>    
+        </td>
+        
+
+      </tr>
+    </ng-container>
+    
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+   
 
   </table>
-
-
-
-
-
-
 </div>

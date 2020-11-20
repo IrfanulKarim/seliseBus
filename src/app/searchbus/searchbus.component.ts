@@ -1,9 +1,12 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit, Inject, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { validateBasis } from '@angular/flex-layout';
 import { District } from '../shared/district';
 import { Bus } from '../shared/bus';
-import {  } from '../services/bus.service';
+import { Search } from '../shared/search';
+import { BusService } from '../services/bus.service';
+import { Params, ActivatedRoute } from '@angular/router';
+import { switchMap } from 'rxjs/operators';
 import { baseURL } from '../shared/baseurl';
 
 
@@ -15,12 +18,15 @@ import { baseURL } from '../shared/baseurl';
 export class SearchbusComponent implements OnInit {
 
   searchbusForm: FormGroup;
+  search: Search;
   district= District;
+
+  @ViewChild('sform') searchFormDirective;
 
 
 
   constructor(private fb: FormBuilder,
-    @Inject('baseURL') private baseURL) { 
+    @Inject('BaseURL') private BaseURL) { 
     this.createForm();
   }
 

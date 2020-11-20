@@ -1,8 +1,9 @@
 import { Component, OnInit, Inject, Injectable } from '@angular/core';
 
 
-import { BusService } from '../services/bus.service';
 import { Bus } from '../shared/bus';
+import { BusService } from '../services/bus.service';
+
 import { BUSES } from '../shared/buses';
 
 import { baseURL } from '../shared/baseurl';
@@ -21,10 +22,11 @@ export class AvailablebusComponent implements OnInit {
 
   errMess: string;
 
+
   name: string;
   departuretime: string;
   arrivaltime: string;
-  seats: string;
+  seatsavailable: string;
   price: string;
 
 
@@ -39,6 +41,6 @@ export class AvailablebusComponent implements OnInit {
 
   }
 
-  displayedColumns: string[] = ['name', 'departuretime', 'arrivaltime', 'seats', 'price'];
+  displayedColumns: string[] = ['name', 'departuretime', 'arrivaltime', 'seatsavailable', 'price','viewseats'];
 
 }
