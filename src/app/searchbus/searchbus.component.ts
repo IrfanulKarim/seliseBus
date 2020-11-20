@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { validateBasis } from '@angular/flex-layout';
 import { District } from '../shared/district';
-
-
+import { Bus } from '../shared/bus';
 
 
 @Component({
@@ -15,6 +14,7 @@ export class SearchbusComponent implements OnInit {
 
   searchbusForm: FormGroup;
   district= District;
+
 
 
   constructor(private fb: FormBuilder) { 

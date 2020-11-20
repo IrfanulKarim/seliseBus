@@ -11,4 +11,5 @@ export class Bus{
     arrivaltime: string;
     seatsavailable: string;
     price: string;
+    tripavailability: boolean;
 }

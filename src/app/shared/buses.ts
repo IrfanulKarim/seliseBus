@@ -9,11 +9,12 @@ export const BUSES: Bus[] =[
       to: 'KHU',
       status: 'Non AC',
       startingPoint: 'Gulistan',
-      endpoint: 'RoyalChattar'
+      endpoint: 'RoyalChattar',
       departuretime: '6:15 AM',
       arrivaltime: '11:35 PM',
       seatsavailable: '36',
       price: '500.00',
+      tripavailability: true;
       
     },
     {
@@ -24,11 +25,12 @@ export const BUSES: Bus[] =[
         to: 'KHU',
         status: 'Non AC',
         startingPoint: 'Gulistan',
-        endpoint: 'RoyalChattar'
+        endpoint: 'RoyalChattar',
         departuretime: '7:15 AM',
         arrivaltime: '12:35 PM',
         seatsavailable: '29',
         price: '500.00',
+        tripavailability: false;
         
       },
       {
@@ -39,11 +41,12 @@ export const BUSES: Bus[] =[
         to: 'CHI',
         status: 'AC',
         startingPoint: 'Razarbagh',
-        endpoint: 'GEC CIRCLE'
+        endpoint: 'GEC CIRCLE',
         departuretime: '7:15 AM',
         arrivaltime: '12:35 PM',
         seatsavailable: '20',
         price: '1000.00',
+        tripavailability: true;
         
       },
 ];
