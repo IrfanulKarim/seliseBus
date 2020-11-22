@@ -52,7 +52,7 @@
   <div *ngIf="bus">
     <mat-grid-list class="busseat" cols="4" rowHeight="25px">
       <mat-grid-tile *ngFor="let vs of bus.viewseats">
-        <p matLine [routerLink]="['/seatdetails',vs.id]">{{ vs.seat }}</p>
+        <p matLine [routerLink]="['/viewseats/id/seatdetails',vs.id]">{{ vs.seat }}</p>
       </mat-grid-tile>
     </mat-grid-list>
   </div>

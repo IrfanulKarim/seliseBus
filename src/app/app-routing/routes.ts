@@ -12,5 +12,5 @@ export const routes: Routes = [
   { path: 'availablebus',     component: AvailablebusComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'viewseats/:id', component: ViewseatsComponent},
-  { path: 'seatdetails/:id', component: SeatdetailsComponent}
+  { path: 'viewseats/:id/seatdetails/:id', component: SeatdetailsComponent}
 ];
