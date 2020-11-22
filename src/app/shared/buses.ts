@@ -1,5 +1,6 @@
 import { Bus } from './bus';
 
+
 export const BUSES: Bus[] =[
     {
       id: '1',
@@ -14,7 +15,57 @@ export const BUSES: Bus[] =[
       arrivaltime: '11:35 PM',
       seatsavailable: '36',
       price: '500.00',
-      tripavailability: false
+      tripavailability: false,
+      viewseats:[
+          {
+            id: '1',
+            status: 'available',
+            gender: 'male',
+            seat: 'A1',
+            class: 'A-Class',
+            fare: '500.00',
+            subtotal: '500.00',
+            servicecharge: '40.00',
+            insurancefee: '10.00',
+            grandtotal: '550.00'
+          },
+          {
+            id: '2',
+            status: 'available',
+            gender: 'male',
+            seat: 'A2',
+            class: 'A-Class',
+            fare: '500.00',
+            subtotal: '500.00',
+            servicecharge: '40.00',
+            insurancefee: '10.00',
+            grandtotal: '550.00'
+          },
+          {
+            id: '3',
+            status: 'available',
+            gender: 'male',
+            seat: 'A3',
+            class: 'A-Class',
+            fare: '500.00',
+            subtotal: '500.00',
+            servicecharge: '40.00',
+            insurancefee: '10.00',
+            grandtotal: '550.00'
+          },
+          {
+            id: '4',
+            status: 'available',
+            gender: 'male',
+            seat: 'A4',
+            class: 'A-Class',
+            fare: '500.00',
+            subtotal: '500.00',
+            servicecharge: '40.00',
+            insurancefee: '10.00',
+            grandtotal: '550.00'
+          }
+      ]
       
     },
     {
@@ -30,7 +81,57 @@ export const BUSES: Bus[] =[
         arrivaltime: '12:35 PM',
         seatsavailable: '29',
         price: '500.00',
-        tripavailability: true
+        tripavailability: false,
+        viewseats:[
+            {
+              id: '1',
+              status: 'available',
+              gender: 'male',
+              seat: 'A1',
+              class: 'A-Class',
+              fare: '500.00',
+              subtotal: '500.00',
+              servicecharge: '40.00',
+              insurancefee: '10.00',
+              grandtotal: '550.00'
+            },
+            {
+              id: '2',
+              status: 'available',
+              gender: 'male',
+              seat: 'A2',
+              class: 'A-Class',
+              fare: '500.00',
+              subtotal: '500.00',
+              servicecharge: '40.00',
+              insurancefee: '10.00',
+              grandtotal: '550.00'
+            },
+            {
+              id: '3',
+              status: 'available',
+              gender: 'male',
+              seat: 'A3',
+              class: 'A-Class',
+              fare: '500.00',
+              subtotal: '500.00',
+              servicecharge: '40.00',
+              insurancefee: '10.00',
+              grandtotal: '550.00'
+            },
+            {
+              id: '4',
+              status: 'available',
+              gender: 'male',
+              seat: 'A4',
+              class: 'A-Class',
+              fare: '500.00',
+              subtotal: '500.00',
+              servicecharge: '40.00',
+              insurancefee: '10.00',
+              grandtotal: '550.00'
+            }
+        ]
         
       },
       {
@@ -46,7 +147,490 @@ export const BUSES: Bus[] =[
         arrivaltime: '12:35 PM',
         seatsavailable: '20',
         price: '1000.00',
-        tripavailability: true
+        tripavailability: true,
+        viewseats:[
+            {
+              id: '1',
+              status: 'available',
+              gender: 'male',
+              seat: 'A1',
+              class: 'E-Class',
+              fare: '500.00',
+              subtotal: '500.00',
+              servicecharge: '40.00',
+              insurancefee: '10.00',
+              grandtotal: '550.00'
+            },
+            {
+              id: '2',
+              status: 'available',
+              gender: 'male',
+              seat: 'A2',
+              class: 'E-Class',
+              fare: '500.00',
+              subtotal: '500.00',
+              servicecharge: '40.00',
+              insurancefee: '10.00',
+              grandtotal: '550.00'
+            },
+            {
+              id: '3',
+              status: 'available',
+              gender: 'male',
+              seat: 'A3',
+              class: 'E-Class',
+              fare: '500.00',
+              subtotal: '500.00',
+              servicecharge: '40.00',
+              insurancefee: '10.00',
+              grandtotal: '550.00'
+            },
+            {
+              id: '4',
+              status: 'available',
+              gender: 'male',
+              seat: 'A4',
+              class: 'E-Class',
+              fare: '500.00',
+              subtotal: '500.00',
+              servicecharge: '40.00',
+              insurancefee: '10.00',
+              grandtotal: '550.00'
+            },
+            {
+                id: '5',
+                status: 'available',
+                gender: 'male',
+                seat: 'B1',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '6',
+                status: 'available',
+                gender: 'male',
+                seat: 'B2',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '7',
+                status: 'available',
+                gender: 'male',
+                seat: 'B3',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '8',
+                status: 'available',
+                gender: 'male',
+                seat: 'B4',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '9',
+                status: 'available',
+                gender: 'male',
+                seat: 'C1',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '10',
+                status: 'available',
+                gender: 'male',
+                seat: 'C2',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '11',
+                status: 'available',
+                gender: 'male',
+                seat: 'C3',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '12',
+                status: 'available',
+                gender: 'male',
+                seat: 'C4',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '13',
+                status: 'available',
+                gender: 'male',
+                seat: 'D1',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '14',
+                status: 'available',
+                gender: 'male',
+                seat: 'D2',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '15',
+                status: 'available',
+                gender: 'male',
+                seat: 'D3',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '16',
+                status: 'available',
+                gender: 'male',
+                seat: 'D4',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '17',
+                status: 'available',
+                gender: 'male',
+                seat: 'E1',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '18',
+                status: 'available',
+                gender: 'male',
+                seat: 'E2',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '19',
+                status: 'available',
+                gender: 'male',
+                seat: 'E3',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '20',
+                status: 'available',
+                gender: 'male',
+                seat: 'E4',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '21',
+                status: 'available',
+                gender: 'male',
+                seat: 'F1',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '22',
+                status: 'available',
+                gender: 'male',
+                seat: 'F2',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '23',
+                status: 'available',
+                gender: 'male',
+                seat: 'F3',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '24',
+                status: 'available',
+                gender: 'male',
+                seat: 'F4',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '25',
+                status: 'available',
+                gender: 'male',
+                seat: 'G1',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '26',
+                status: 'available',
+                gender: 'male',
+                seat: 'G2',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '27',
+                status: 'available',
+                gender: 'male',
+                seat: 'G3',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '28',
+                status: 'available',
+                gender: 'male',
+                seat: 'G4',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '29',
+                status: 'available',
+                gender: 'male',
+                seat: 'H1',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '30',
+                status: 'available',
+                gender: 'male',
+                seat: 'H2',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '31',
+                status: 'available',
+                gender: 'male',
+                seat: 'H3',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '32',
+                status: 'available',
+                gender: 'male',
+                seat: 'H4',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '33',
+                status: 'available',
+                gender: 'male',
+                seat: 'I1',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '34',
+                status: 'available',
+                gender: 'male',
+                seat: 'I2',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '35',
+                status: 'available',
+                gender: 'male',
+                seat: 'I3',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '36',
+                status: 'available',
+                gender: 'male',
+                seat: 'I4',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '37',
+                status: 'available',
+                gender: 'male',
+                seat: 'J1',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '38',
+                status: 'available',
+                gender: 'male',
+                seat: 'J2',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '39',
+                status: 'available',
+                gender: 'male',
+                seat: 'J3',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              },
+              {
+                id: '40',
+                status: 'available',
+                gender: 'male',
+                seat: 'J4',
+                class: 'E-Class',
+                fare: '500.00',
+                subtotal: '500.00',
+                servicecharge: '40.00',
+                insurancefee: '10.00',
+                grandtotal: '550.00'
+              }
+
+        ]
         
-      },
+      }
 ];

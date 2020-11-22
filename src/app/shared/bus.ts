@@ -1,3 +1,5 @@
+import { Viewseat } from './viewseat';
+
 export class Bus{
     id: string;
     name: string;
@@ -12,4 +14,5 @@ export class Bus{
     seatsavailable: string;
     price: string;
     tripavailability: boolean;
+    viewseats: Viewseat[];
 }

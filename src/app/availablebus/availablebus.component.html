@@ -47,7 +47,7 @@
       <th mat-header-cell *matHeaderCellDef> </th>
       <tr>
         <td mat-cell *matCellDef="let bus">
-          <button type="submit" mat-button routerLink="" class="background-primary text-flora-white">View Seats</button>    
+          <button type="submit" mat-button [routerLink]="['/viewseats',bus.id]" class="background-primary text-flora-white">View Seats</button>    
         </td>
       </tr>
     </ng-container>

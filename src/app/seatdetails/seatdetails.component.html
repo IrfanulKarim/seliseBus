@@ -1,0 +1,144 @@
+<div class="container"
+  fxlayout="rows"
+  fxLayout.sm="column"
+  fxLayout.xs="column"
+  fxLayoutGap="10px">
+
+
+  <table mat-table class="mat-elevation-z8" class="viewseats">
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>
+        Name - {{bus.name}}
+      </th>
+    </ng-container>
+  
+    <ng-container matColumnDef="departuretime">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>
+        Departure Time - {{bus.departuretime}}
+      </th>
+    </ng-container>
+
+    <ng-container matColumnDef="arrivaltime">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>
+        Arrival Time - {{bus.arrivaltime}}
+      </th>
+    </ng-container>
+
+    <ng-container matColumnDef="seatsavailable">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>
+        Available Seats - {{bus.seatsavailable}}
+      </th>
+    </ng-container>
+
+    <ng-container matColumnDef="price">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>
+        Price - {{bus.price}}
+      </th>
+    </ng-container>
+
+    <ng-container matColumnDef="viewseats">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>
+        <button type="submit" mat-button  class="background-primary text-flora-white">View Seats</button>   
+      </th>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+   
+  </table>
+
+  
+
+  <div *ngIf="bus">
+    <mat-grid-list class="busseat" cols="4" rowHeight="25px">
+      <mat-grid-tile [routerLink]="['/seatdetails',vs.id]" *ngFor="let vs of bus.viewseats">
+        <p matLine>{{ vs.seat }}</p>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+  
+
+  <!-- <div *ngIf="bus">
+    <mat-list >
+        <mat-list-item *ngFor="let vs of bus.viewseats">
+            <p matLine>{{ vs.seat }}</p>
+        </mat-list-item>
+    </mat-list>
+  </div> -->
+
+
+  <!-- <div class="mat-table">
+    <div class="mat-header-row">
+      <div class="mat-header-cell">Name</div>
+      <div class="mat-header-cell">departuretime</div>
+      <div class="mat-header-cell">Three</div>
+    </div>
+    <div class="mat-row">
+      <div class="mat-cell">{{bus.name}}</div>
+      <div class="mat-cell">{{bus.departuretime}}</div>
+      <div class="mat-cell">{{bus.arrivaltime}}</div>
+    </div>
+  </div> -->
+
+  <!-- <table>
+    <tr>
+      <td>Name</td>
+      <td>departuretime</td>
+      <td>arrivaltime</td>
+      <td>seatsavailable</td>
+    </tr>
+    <tr>
+      <td>{{bus.name}}</td>
+      <td>{{bus.departuretime}}</td>
+      <td>{{bus.arrivaltime}}</td>
+      <td>{{bus.seatsavailable}}</td>
+    </tr>
+  </table> -->
+
+
+
+  <!-- <table mat-table [dataSource]="this.dataSource" class="mat-elevation-z8">
+
+    <ng-container  matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let b"> {{b.name}} </td>
+    </ng-container>
+
+    <ng-container  matColumnDef="departuretime">
+      <th mat-header-cell *matHeaderCellDef> Departure Time </th>
+        <td mat-cell *matCellDef="let b"> {{b.departuretime}} </td>
+    </ng-container>
+
+    <ng-container  matColumnDef="arrivaltime">
+      <th mat-header-cell *matHeaderCellDef> arrivaltime </th>
+        <td mat-cell *matCellDef="let b"> {{b.arrivaltime}} </td>
+    </ng-container>
+
+    <ng-container  matColumnDef="seatsavailable">
+      <th mat-header-cell *matHeaderCellDef> seatsavailable </th>
+        <td mat-cell *matCellDef="let b"> {{b.seatsavailable}} </td>
+    </ng-container>
+
+    <ng-container  matColumnDef="price">
+      <th mat-header-cell *matHeaderCellDef> price </th>
+        <td mat-cell *matCellDef="let b"> {{b.price}} </td>
+    </ng-container>
+
+    <ng-container  matColumnDef="viewseats">
+      <th mat-header-cell *matHeaderCellDef> </th>
+        <td mat-cell *matCellDef="let b">
+          <button type="submit" mat-button  class="background-primary text-flora-white">View Seats</button>    
+        </td>
+    </ng-container>
+    
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+   
+
+  </table> -->
+
+  
+
+</div>

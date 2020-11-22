@@ -30,10 +30,13 @@ import 'hammerjs';
 import { AppComponent } from './app.component';
 import { SearchbusComponent } from './searchbus/searchbus.component';
 import { AvailablebusComponent } from './availablebus/availablebus.component';
+import { ViewseatsComponent } from './viewseats/viewseats.component';
 
 import { BusService } from './services/bus.service';
 
 import { baseURL } from './shared/baseurl';
+import { SeatdetailsComponent } from './seatdetails/seatdetails.component';
+
 
 
 
@@ -41,7 +44,9 @@ import { baseURL } from './shared/baseurl';
   declarations: [
     AppComponent,
     SearchbusComponent,
-    AvailablebusComponent
+    AvailablebusComponent,
+    ViewseatsComponent,
+    SeatdetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -23,4 +23,13 @@ export class BusService {
     // return this.http.get<Bus[]>(baseURL+ 'buses?tripavailability=true').pipe(map(buses=>buses));
     return of(BUSES.filter((buses) => buses.tripavailability));
   }
+
+  getBus(id: string): Observable<Bus>{
+    return of (BUSES.filter((buses)=>(buses.id===id))[0]);
+
+  }
+
+  getSeatdetails(id: string): Observable<Bus>{
+    return of (BUSES.filter((buses)=>(buses.viewseats.id===id))[0]);
+  }
 }
