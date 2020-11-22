@@ -18,6 +18,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class ViewseatsComponent implements OnInit {
 
   bus: Bus;
+  buses: Bus[];
   dataSource: Bus;
   errMess: string;
 

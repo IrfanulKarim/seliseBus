@@ -1,4 +1,5 @@
 import { Bus } from './bus';
+import { Viewseat } from './viewseat';
 
 
 export const BUSES: Bus[] =[

@@ -6,6 +6,7 @@ import { map, catchError } from 'rxjs/operators';
 import { of, observable, Observable } from 'rxjs';
 
 import { Bus } from '../shared/bus';
+import { Viewseat } from '../shared/viewseat';
 import { Search } from '../shared/search';
 import { District } from '../shared/district';
 import { BUSES } from '../shared/buses';
@@ -30,6 +31,6 @@ export class BusService {
   }
 
   getSeatdetails(id: string): Observable<Bus>{
-    return of (BUSES.filter((buses)=>(buses.viewseats.id===id))[0]);
+    return of (BUSES.filter((buses)=>(buses.id===id))[0]);
   }
 }

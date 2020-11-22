@@ -7,6 +7,7 @@ import { baseURL } from '../shared/baseurl';
 import { Location } from '@angular/common';
 import { switchMap } from 'rxjs/operators';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Viewseat } from '../shared/viewseat';
 
 
 @Component({
@@ -17,6 +18,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class SeatdetailsComponent implements OnInit {
 
   bus: Bus;
+  buses: Bus[];
+  viewseat: Viewseat;
   dataSource: Bus;
   errMess: string;
 
